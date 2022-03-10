@@ -1,0 +1,43 @@
+{
+  "HEADER": {
+    "HOME": "Home",
+    "SKILLS": "Skills",
+    "PROJECTS": "Projects",
+    "CONTACT": "Contact"
+  },
+  "ABOUTME": {
+    "WHOAMI": "Who am i?",
+    "PARAGRAPH": "I’m Antonio, a web developer from Argentina. I study in a self-taught way, and love to keep improving at my code skills and making new projects. I started studying at end of 2019, in the way i have achieved experience trough practices and differents web pages that you will be able to see in the “Projects” section.  I am responsible, hardworking and persistent person! Love to work in group and solve needs"
+  },
+  "SKILLS": {
+    "H2": "Tools and languages that i work with"
+  },
+  "PROJECTS": {
+    "H2": "Projects"
+  },
+  "CONTACT": {
+    "H2": "Contact me",
+    "MAILBOX": {
+      "FIRSTSPAN": "Send me an email",
+      "SECONDSPAN": "Thank",
+      "PARAGRAPH": "you! :)"
+    },
+    "LINKEDINBOX": {
+      "FIRSTSPAN": "You can also",
+      "SECONDSPAN": "contact me at",
+      "THIRDSPAN": "Based on",
+      "PARAGRAPH": "Córdoba, Argentina"
+    }
+  },
+  "MOBILE": {
+    "CONTACT": {
+      "MAILBOX": {
+        "FIRSTSPAN": "¿Como te gustaría contactarme?",
+        "SECONDSPAN": "o"
+      }
+    }
+  }
+}
+
+
+
