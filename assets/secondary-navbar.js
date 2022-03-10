@@ -76,7 +76,7 @@ let SecondaryScrollBar = ()=> {
 
                 }, 50);
               }
-              window.location.href = "/#" + lala;
+              window.location.href = "/portfolio/#" + lala;
               NavBar(i)
               navigation.children[i].classList.add('selected');
 
