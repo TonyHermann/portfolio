@@ -1,0 +1,45 @@
+svg:nth-of-type(1) {
+      position: absolute;
+      top: 0%;
+      width: 110vh;
+      height: 30vh;
+      left: 50%;
+      z-index: 99;
+      pointer-events: none;
+}
+
+svg:nth-of-type(2) {
+    pointer-events: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 110vh;
+    height: 30vh;
+      z-index: 99;
+}
+
+.square {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 0.5vh dashed #000;
+  border-radius: 0.5vh;
+  margin: 0;
+  padding: 3vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  width: 60vh; /* Need a specific value to work */
+  height: 40vh;
+  p {
+      text-align: right;
+      margin: 0;
+      font-size: 1.8vh;
+
+  }
+  span {
+      text-align: left;
+      text-align: center;
+      font-size: 7vh;
+      font-weight: 900;
+  }
+}

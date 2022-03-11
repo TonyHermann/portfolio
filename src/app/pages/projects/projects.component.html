@@ -1,0 +1,25 @@
+<section id="3">
+    <h2>{{'PROJECTS.H2' | translate}}</h2>
+    <div class="searchbar">
+        <input id="searchbar" name="term" type="text" placeholder="Search..." [(ngModel)]="term">
+        <div class="icon-container">
+            <i class="searchInputIcon fa fa-search"></i>
+        </div>
+    </div>
+    <div class="projects-container" >
+        <div *ngFor = "let item of items | filter:term ">
+            <app-project-card
+            [projecto]='{
+                title: item.title,
+                image: item.image,
+                image2: item.image2,
+                linkrepo: item.linkrepo,
+                link: item.link,
+                info: item.info,
+                techs: item.techs,
+                alt: item.alt
+            }'>
+            </app-project-card>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,40 @@
+@import '../../../base/mixins';
+
+.buttonsX {
+  display: none;
+}
+
+@include telefono {
+  .buttonsX {
+    //TODO FIX
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    position: absolute;
+    top: 0%;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 80%;
+    z-index: 99999;
+    align-items: center;
+    margin: auto;
+    transform: translateX(60vh);
+    opacity: 0%;
+    transition: all 1s;
+    position: fixed;
+    pointer-events: none;
+    ul{
+      li {
+        margin-bottom: 5vh;
+      }
+      flex-direction: column;
+    }
+    &.selected {
+      transform: translateX(10vh);
+      opacity: 100%;
+      pointer-events: all;
+    }
+  }
+}
+

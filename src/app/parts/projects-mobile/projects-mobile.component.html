@@ -1,0 +1,22 @@
+<div class="projects-container-mobile">
+  <div class="header">
+    <span>My projects</span>
+    <div class="header-link">
+      <a href="#3"><i class="fa fa-arrow-right" aria-hidden="true"></i>All my projects</a>
+    </div>
+  </div>
+  <div class="body" >
+    <div *ngFor = "let item of items">     <app-proyect-card-mobile
+      [projecto]='{
+      title: item.title,
+      image: item.image,
+      image2: item.image2,
+      linkrepo: item.linkrepo,
+      link: item.link,
+      info: item.info,
+      techs: item.techs,
+      alt: item.alt
+  }'></app-proyect-card-mobile></div>
+
+  </div>
+</div>

@@ -1,0 +1,43 @@
+{
+  "HEADER": {
+    "HOME": "Inicio",
+    "SKILLS": "Skills",
+    "PROJECTS": "Proyectos",
+    "CONTACT": "Contacto"
+  },
+  "ABOUTME": {
+    "WHOAMI": "¿Quien soy?",
+    "PARAGRAPH": "Soy Antonio, un desarrollador web de Argentina. Estudio de manera autodidacta y amo mantener una mejoría constante en mis habilidades, conocimientos y hacer nuevos proyectos. Empezé a estudiar a finales de 2019, en el camino, adquirí experiencia a través de practicas y diferentes paginas web que seras capaz de ver en la sección de <<proyectos>> ¡Soy un hombre responsable, amante del trabajo duro y persistente! Amo trabajar en grupo y resolver las necesidades de los clientes."
+  },
+  "SKILLS": {
+    "H2": "Herramientas y lenguajes con los que trabajo"
+  },
+  "PROJECTS": {
+    "H2": "Proyectos"
+  },
+  "CONTACT": {
+    "H2": "Contáctame",
+    "MAILBOX": {
+      "FIRSTSPAN": "Mandame un e-mail",
+      "SECONDSPAN": "Te",
+      "PARAGRAPH": "agradezo! :)"
+    },
+    "LINKEDINBOX": {
+      "FIRSTSPAN": "También puedes",
+      "SECONDSPAN": "contactarme en",
+      "THIRDSPAN": "De",
+      "PARAGRAPH": "Córdoba, Argentina"
+    }
+  },
+  "MOBILE": {
+    "CONTACT": {
+      "MAILBOX": {
+        "FIRSTSPAN": "¿Como te gustaría contactarme?",
+        "SECONDSPAN": "or"
+      }
+    }
+  }
+}
+
+
+

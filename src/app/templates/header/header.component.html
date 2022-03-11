@@ -1,0 +1,33 @@
+<header>
+    <nav>
+        <div class="logo">
+            <a href="/" id="logo-tony">Tony</a>
+        </div>
+        <div class="buttons">
+            <ul id="buttons">
+              <li id="1n" class="button home_button selected selectedN" data-id="x"><a class="buttonNavbarA" href="/portfolio/#1">{{'HEADER.HOME' | translate}}</a></li>
+              <li id="2n" class="button skills_button"><a class="buttonNavbarA" href="/portfolio/#2">{{'HEADER.SKILLS' | translate}}</a></li>
+              <li id="3n" class="button projects_button"><a class="buttonNavbarA" href="/portfolio/#3">{{'HEADER.PROJECTS' | translate}}</a></li>
+              <li id="4n" class="button contact_button"><a class="buttonNavbarA" href="/portfolio/#4">{{'HEADER.CONTACT' | translate}}</a></li>
+
+            </ul>
+        </div>
+
+        <div class="contact-mobile">
+          <ul>
+            <li id="4nmobile" class="button contact_button"><a class="buttonNavbarA" href="/portfolio/#4">{{'HEADER.CONTACT' | translate}}</a></li>
+          </ul>
+        </div>
+        <div class="language-selector buttonLang">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+            <select #langSelect [value]="lang" name="language-selector" (change)="changeLang(langSelect.value)">
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+            </select>
+
+        </div>
+        <div class="hamburguer" id="hamburguer">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+    </nav>
+</header>

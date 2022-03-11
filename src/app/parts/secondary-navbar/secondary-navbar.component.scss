@@ -1,0 +1,41 @@
+@import '../../../base/mixins';
+
+.secondary-navbar {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    list-style: none;
+    top: 50%;
+    right: 0;
+    margin-right: 1%;
+    z-index: 999;
+
+
+    li {
+        width: 2vh;
+        height: 2vh;
+        background-color: #EBCDCD;
+        border: 2px solid #EBCDCD;
+        margin-top: 10px;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+    li:hover, li.selected {
+        background: none;
+        transform: scale(1.1);
+        height: 3vh;
+      }
+}
+
+.selected-nav {
+    background: none;
+        transform: scale(1.1);
+        height: 30px;
+}
+
+@include telefono {
+  .secondary-navbar {
+    display: none;
+  }
+}

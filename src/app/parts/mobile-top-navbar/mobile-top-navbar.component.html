@@ -1,0 +1,17 @@
+<div class="buttonsX">
+  <ul id="buttonsX">
+    <li id="1nX" class="button home_button selected selectedN" data-id="x"><a class="buttonNavbarA" href="/portfolio/#1">{{'HEADER.HOME' | translate}}</a></li>
+    <li id="2nX" class="button skills_button"><a class="buttonNavbarA" href="/portfolio/#2">{{'HEADER.SKILLS' | translate}}</a></li>
+    <li id="3nX" class="button projects_button"><a class="buttonNavbarA" href="/portfolio/#3">{{'HEADER.PROJECTS' | translate}}</a></li>
+    <li id="4nX" class="button contact_button"><a class="buttonNavbarA" href="/portfolio/#4">{{'HEADER.CONTACT' | translate}}</a></li>
+
+  </ul>
+  <div class="language-selector buttonLang">
+    <i class="fa fa-globe" aria-hidden="true"></i>
+    <select #langSelect [value]="lang" name="language-selector" (change)="changeLang(langSelect.value)">
+        <option value="en">English</option>
+        <option value="es">Spanish</option>
+    </select>
+
+</div>
+</div>

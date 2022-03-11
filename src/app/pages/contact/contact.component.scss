@@ -1,0 +1,237 @@
+@import '../../../base/mixins';
+
+section {
+    margin-top: 25vh;
+    margin-bottom: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img {
+        width: 10vh;
+        position: absolute;
+    }
+}
+
+
+h2 {
+    font-size: 4vh;
+}
+
+.contact-container {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact-box {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    // .mail-box {
+    //     background-color: #FFFCFC;
+    //     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    //     border-radius: 2vh;
+    //     display: flex;
+    //     padding: 8vh;
+    //     justify-content: center;
+    //     form {
+    //         text-align: left;
+    //         display: flex;
+    //         flex-direction: column;
+    //         justify-content: space-evenly;
+    //         justify-items: center;
+    //         padding-left: 5vh;
+    //         padding-right: 5vh;
+    //         input[type=text], textarea{
+    //             border: 1px solid #E2E1E5;
+    //             border-radius: 5px;
+    //         }
+    //         input {
+    //             padding: 1.5vh;
+    //         }
+    //     }
+
+    // }
+    .linkedin-box {
+        background: #F2E0E0;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 22px;
+        padding: 8vh;
+        transform: scale(1.1);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .linkedin-box-header {
+            span {
+                font-family: 'Poppins';
+                font-weight: 900;
+                font-size: 2.5vh;
+                margin: 0;
+
+            }
+            span:after {
+                content: "\a";
+                white-space: pre;
+            }
+        }
+        .linkedin-logo {
+            width: 10vh;
+            height: 10vh;
+            border-radius: 20vh;
+
+            border: 0.3vh dashed #000000;
+            background-color: white;
+            cursor: pointer;
+            i {
+                font-size: 5vh;
+            }
+        }
+        .linkedin-box-footer {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1vh;
+            span {
+                font-style: italic;
+            }
+            p {
+                font-weight: 900;
+            }
+        }
+
+    }
+
+    .mail-box {
+        background: #ffffff;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 22px;
+        padding: 8vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .mail-box-header {
+            span {
+                font-family: 'Poppins';
+                font-weight: 900;
+                font-size: 2.5vh;
+                margin: 0;
+
+            }
+            span:after {
+                content: "\a";
+                white-space: pre;
+            }
+        }
+        .mail-logo {
+            width: 10vh;
+            height: 10vh;
+            border-radius: 20vh;
+
+            border: 0.3vh dashed #000000;
+            background-color: white;
+            cursor: pointer;
+            i {
+                font-size: 5vh;
+            }
+        }
+        .mail-box-footer {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1vh;
+            span {
+                font-style: italic;
+            }
+            p {
+                font-weight: 900;
+            }
+        }
+
+    }
+
+}
+
+.submit-button {
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20vh;
+    display: inline-block;
+    width: 40vh;
+    max-width: 70%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background: linear-gradient(0deg, #F2E0E0, #F2E0E0);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mobile {
+  display: none;
+}
+
+@include telefono {
+  .or {
+    font-size: 2vh;
+    padding: 2vh;
+  }
+  .mobile {
+    display: flex;
+  }
+  section {
+    margin-top: 15vh;
+    img {
+      display: none;
+    }
+  }
+  .contact-container {
+
+    .contact-box:nth-of-type(1) {
+      display: none;
+    }
+  }
+
+  .linkedin-logo {
+    width: 10vh;
+    height: 10vh;
+    border-radius: 20vh;
+
+    margin-bottom: 5vh;
+    border: 0.3vh dashed #000000;
+    background-color: white;
+    cursor: pointer;
+    i {
+        font-size: 5vh;
+    }
+  }
+  .contact-box:nth-of-type(2) {
+    margin: auto;
+    height: 100%;
+    width: 90%;
+    .mail-box {
+      .mail-box-header {
+        span {
+          font-weight: 300;
+          padding-bottom: 12vh;
+        }
+      }
+    }
+    .mail-logo {
+      width: 15vh;
+      height: 15vh;
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+    }
+
+
+  }
+
+}

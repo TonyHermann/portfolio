@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="dialog-main-container">
+    <h2>{{data.title}}</h2>
+    <div class="images">
+      <img src="{{data.image}}" alt="{{data.title}} preview image">
+      <img src="{{data.image2}}" alt="{{data.title}} preview image">
+    </div>
+  </div>
+  <div class="dialog-side-container">
+    <div class="info-container">
+      <h3>Info</h3>
+      <p>{{data.info}}</p>
+    </div>
+    <div class="techs-container">
+      <h3>Technologies</h3>
+      <div  class="techs-list">
+        <span class="tech" *ngFor = "let item of techlist" >{{item}}</span>
+      </div>
+    </div>
+    <div class="buttons-container">
+      <a href="{{data.link}}" target="_blank" >Visit the web <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+      <a href="{{data.linkrepo}}" target="_blank">View repo <i class="fa fa-github"></i></a>
+    </div>
+  </div>
+</div>
+
+<mat-dialog-actions align="end">
+  <button class="dialog-button" mat-button mat-dialog-close>Cancel</button>
+</mat-dialog-actions>

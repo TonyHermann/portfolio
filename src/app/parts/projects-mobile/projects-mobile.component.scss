@@ -1,0 +1,39 @@
+@import '../../../base/mixins';
+
+.projects-container-mobile {
+  display: none;
+}
+
+@include telefono {
+  .projects-container-mobile {
+    display:flex;
+    flex-direction: column;
+    transform: translateY(-6vh);
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    padding-bottom: 1vh;
+  }
+
+  .header-link {
+    a {
+      color: #FF7F50;
+    }
+  }
+
+  .body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: scroll;
+    height: 30vh;
+
+  }
+
+
+}
