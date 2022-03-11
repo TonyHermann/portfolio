@@ -14,7 +14,7 @@ function start() {
   nav_buttons.forEach((button)=> {
     if(button.id === "1n") {
       button.addEventListener('click', function(){
-        console.log('holanda!!!');
+
         NavBar(0)
         header.classList.replace('animate__bounceInUp', 'animate__bounceInDown');
         setTimeout(MainpageAnimations('in'), 1500 );
@@ -42,7 +42,7 @@ function start() {
   const anterior = document.getElementsByClassName('selectedN')[0];
   anterior.classList.remove('selected');
   anterior.classList.remove('selectedN');
-  console.log("Indexx is " + indexx);
+
   const button = document.getElementById(indexx);
 
   button.classList.add('selected');
@@ -103,7 +103,7 @@ let SecondaryScrollBar = ()=> {
 let Sticky = ()=> {
 
   if(window.innerWidth > 1024) {
-    console.log('hola!asdsaadadad');
+
     window.addEventListener('scroll', function(){
       const header = document.querySelector('header');
       header.classList.toggle('bottom', window.scrollY > 720);
@@ -199,7 +199,7 @@ let Hamburguer = ()=> {
   let buttons = document.querySelector('#buttonsX');
   let liX = buttons.childNodes;
   liX.forEach(function(x) {
-    console.log(x.firstChild);
+
     let y = x.firstChild;
     y.addEventListener('click', function(){
       buttonsDiv.classList.toggle('selected');
